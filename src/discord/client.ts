@@ -45,10 +45,13 @@ export default class extends Client {
         .filter((file) => !file.endsWith(".ts"));
 
       for (const file of commandFiles) {
-        const command = require(`./commands/${file}/`);
+        const {command} = require(`./commands/${file}/`);
         
-        this.restCommands.push(command.data.toJSON());
-        this.commands.set(command.data.name, command);
+        if (command?.data) {
+          this.restCommands.push(command.data.toJSON());
+          this.commands.set(command.data.name, command);
+        }
+       
       }
     } catch (error) {
       console.log(error);
