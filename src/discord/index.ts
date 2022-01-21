@@ -3,7 +3,6 @@ import Client from "./client"
 import {
   onInteractionCreate,
   onReady,
-  onMessage
 } from "./events"
 
 export default () => {
@@ -14,7 +13,7 @@ export default () => {
   client.on('interactionCreate', 
      interaction => onInteractionCreate(interaction, client))
 
-  client.on('messageCreate', onMessage)
+  
 
 }
 

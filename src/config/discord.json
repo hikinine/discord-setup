@@ -1,0 +1,22 @@
+{
+
+  "GUILD_ID_DEBUG": "932763114217308180",
+  "GUILD_ID": "932763114217308180",
+
+  "CLIENT_INTENTS": [
+    "GUILDS",
+    "GUILD_MESSAGES",
+    "GUILD_MEMBERS"
+  ],
+  "PERMISSIONS_ROLES": {
+    "owner": "",
+    "admin":"",
+    "mod": "",
+    "helper": "",
+    "user": ""
+  },
+
+  "setActivity": {
+    "name": "kkkkk"
+  }
+}
