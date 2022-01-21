@@ -1,0 +1,1 @@
+export const seconds = (ms: number) => 1000 * ms
